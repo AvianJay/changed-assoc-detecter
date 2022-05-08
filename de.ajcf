@@ -1,0 +1,14 @@
+@echo off
+
+:re
+assoc .exe > exe.tmp
+assoc .bat > bat.tmp
+assoc .com > com.tmp
+assoc .cmd > cmd.tmp
+assoc .vbs > vbs.tmp
+set /p exe=<exe.tmp
+set /p bat=<bat.tmp
+set /p com=<com.tmp
+set /p cmd=<cmd.tmp
+set /p vbs=<vbs.tmp
+del *.tmp
